@@ -18,31 +18,112 @@ header {
 		hsl(13, 100%, 72%),
 		hsl(353, 100%, 62%)
 	);
-	width: 100%;
 	height: 55vh;
 }
 .mainnav {
+	width: 85%;
+	height: 35vh;
 	display: flex;
-	height: 24vh;
-	width: 90%;
-	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 }
-.mainmenu li {
-	list-style: none;
+.mainmenu {
+	width: 100%;
 }
-.mainmenu a {
+.menu ul,
+li,
+a {
 	text-decoration: none;
+	list-style: none;
+	color: hsl(240, 2%, 79%);
+	margin-right: 5rem;
 }
 .menu {
 	display: flex;
-	align-items: center;
-	width: 100vh;
+	margin-top: 0.5rem;
+	margin-left: -3rem;
 	justify-content: space-around;
+	font-family: "Ubuntu", sans-serif;
 }
-.dropdown,
-.secondrop,
-.thirddrop {
-	display: flex;
+.dropmenu,
+.company {
+	margin-right: -5rem;
+}
+.dropdown {
+	display: none;
 	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 20vh;
+	height: 20vh;
+	background-color: #fff;
+	margin-top: 2rem;
+	margin-left: 1rem;
+	border-radius: 10px;
+}
+
+.dropdown a {
+	margin-left: 2rem;
+	padding: 1rem;
+	color: hsl(208, 49%, 24%);
+}
+.dropdown li {
+	margin-bottom: 1rem;
+}
+.dropdown a:hover {
+	margin-left: 3rem;
+	font-weight: 700;
+	color: hsl(237, 23%, 32%);
+}
+.secondrop {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 14vh;
+	height: 16vh;
+	background-color: #fff;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	border-radius: 10px;
+}
+.secondrop a {
+	margin-left: 1rem;
+	padding: 1rem;
+	color: hsl(208, 49%, 24%);
+}
+.secondrop li {
+	margin-bottom: 1rem;
+}
+.secondrop a:hover {
+	margin-left: 2rem;
+	font-weight: 700;
+	color: hsl(237, 23%, 32%);
+}
+.thirddrop {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 13vh;
+	height: 12vh;
+	background-color: #fff;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	border-radius: 10px;
+}
+.thirddrop a {
+	margin-left: 1rem;
+	padding: 0rem;
+	color: hsl(208, 49%, 24%);
+}
+.thirddrop li {
+	margin-bottom: 1rem;
+}
+.thirddrop a:hover {
+	margin-left: 2rem;
+	font-weight: 700;
+	color: hsl(237, 23%, 32%);
+}
+.form {
+	display: flex;
 }
