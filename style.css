@@ -22,7 +22,7 @@ header {
 		linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
 	height: 65vh;
 	font-family: "Ubuntu", sans-serif;
-	border-bottom-left-radius: 20%;
+	border-bottom-left-radius: 80px;
 }
 .mainnav {
 	display: flex;
@@ -155,6 +155,13 @@ header {
 	background-color: hsl(355, 100%, 74%);
 	color: hsl(0, 0%, 100%);
 }
+.ham {
+	display: none;
+	background-image: url(images/icon-hamburger.svg);
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+}
 .underNav {
 	margin-top: 9rem;
 	color: hsl(0, 0%, 100%);
@@ -210,30 +217,183 @@ header {
 	justify-content: center;
 	flex-direction: column;
 	font-family: "Overpass", sans-serif;
-	width: 100vh;
-	margin-top: 8rem;
+	width: 100%;
+	margin-top: 4rem;
 }
-.maincontent h2 {
+.maincontent h2,
+.maincontent h3,
+.rightbottom h4 {
 	color: hsl(208, 49%, 24%);
 	font-family: "Overpass", sans-serif;
 }
 .firstcontent {
 	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 85vh;
 }
 .leftmain {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 35%;
+	gap: 30px;
 }
 .rightmain {
 	display: flex;
-	width: 45%;
+	width: 25%;
 }
 .firstPicture {
-	width: 100%;
 	height: fit-content;
 	position: relative;
-	left: 10%;
+	left: 35%;
 	align-self: center;
+}
+.undermain {
+	width: 100%;
+	height: 45vh;
+	display: flex;
+	background-image: url(images/bg-pattern-circles.svg),
+		linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+	background-repeat: no-repeat;
+	background-position: -24vh -48vh, 0px 0px;
+	border-bottom-left-radius: 108px;
+	border-top-right-radius: 120px;
+	margin-top: 8rem;
+}
+.leftunder {
+	margin-top: -4rem;
+
+	margin-left: 7rem;
+}
+.rightuner {
+	color: hsl(0, 0%, 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 4rem;
+	width: 40%;
+	gap: 20px;
+}
+.rightuner h3 {
+	font-size: 40px;
+}
+.rightuner p {
+	width: 70%;
+	line-height: 25px;
+}
+.bottom {
+	display: flex;
+	align-items: center;
+	margin-top: 10rem;
+}
+.bottomPicture {
+	margin-left: -17rem;
+}
+.rightbottom {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 50%;
+}
+.rightbottom p {
+	color: hsl(207, 13%, 34%);
+	width: 70%;
+	text-align: left;
+}
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10rem;
+	background-color: hsl(240, 10%, 16%);
+	height: 50vh;
+	border-top-right-radius: 120px;
+}
+footer ul,
+footer a,
+footer li {
+	list-style-type: none;
+	text-decoration: none;
+	color: hsl(240, 2%, 79%);
+	padding: 10px;
+	margin-left: -10px;
+}
+.footermenu {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.menuF {
+	display: flex;
+	gap: 106px;
+	margin-bottom: -12rem;
+}
+
+.menuF a {
+	margin-bottom: 5rem;
+}
+.conn,
+.comp,
+.prod {
+	font-weight: 600;
+	color: hsl(0, 0%, 100%);
+}
+.attribution {
+	font-size: 15px;
+	text-align: center;
+	width: 50%;
+	color: hsl(240, 2%, 79%);
+}
+.attribution a {
+	color: hsl(356, 100%, 66%);
+}
+.fot a:hover {
+	text-decoration: underline;
+}
+.menuMob {
+	display: none;
+}
+/* Mobile  */
+@media screen and (max-width: 700px) {
+	.mainmenu {
+		display: none;
+	}
+	.mainnav {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin-left: 10rem;
+		margin-top: 0;
+	}
+	.ham {
+		background-image: url(images/icon-hamburger.svg);
+		background-size: cover;
+		width: 20px;
+		height: 20px;
+	}
+	.menuMob {
+		display: flex;
+		width: 90%;
+		position: absolute;
+		top: 15%;
+		background-color: hsl(0, 0%, 100%);
+		left: 5%;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.mobUl ul,
+	.mobUl li,
+	.mobUl a,
+	.formMobile li,
+	.formMobile ul,
+	.formMobile a {
+		list-style: none;
+		text-decoration: none;
+	}
 }

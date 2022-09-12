@@ -26,20 +26,51 @@
 		<title>Frontend Mentor | [Blogr]</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<header>
 			<nav class="mainnav">
 				<img src="images/logo.svg" alt="logo" width="auto" />
+				<span class="ham"></span>
+				<span class="closeHam"></span>
+				<div class="menuMob">
+					<ul class="mobUl">
+						<li class="product">
+							<a href="#">Product</a>
+							<ul class="productDropdownMobile">
+								<li><a href="">Overview</a></li>
+								<li><a href="">Pricing</a></li>
+								<li><a href="">Marketplace</a></li>
+								<li><a href="">Features</a></li>
+								<li><a href="">Integrations</a></li>
+							</ul>
+						</li>
+						<li class="companyMobile">
+							<a href="#">Company</a>
+							<ul class="companyDropdownMobile">
+								<li><a href="">About</a></li>
+								<li><a href="">Team</a></li>
+								<li><a href="">Blog</a></li>
+								<li><a href="">Careers</a></li>
+							</ul>
+						</li>
+						<li class="connectMobile">
+							<a href="#">Connect</a>
+							<ul class="connectDropdownMobile">
+								<li><a href="">Contact</a></li>
+								<li><a href="">Newsletter</a></li>
+								<li><a href="">LinkedIn</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="formMobile">
+						<ul class="ulFormMobile">
+							<li><a href="#">Login</a></li>
+							<li class="registerMob"><a href="#">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- Dektop nav -->
 				<div class="mainmenu">
 					<ul class="mainUl">
 						<li class="product">
@@ -146,7 +177,7 @@
 			</div>
 			<div class="bottom">
 				<div class="leftbottom">
-					<picture>
+					<picture class="bottomPicture">
 						<source
 							media="(max-width: 768px)"
 							srcset="images/illustration-laptop-mobile.svg"
@@ -183,8 +214,8 @@
 			<div class="footermenu">
 				<ul class="menuF">
 					<li class="dropmenuF">
-						<a href="#">Product</a>
-						<ul class="dropdownF mob">
+						<a href="#" class="prod">Product</a>
+						<ul class="dropdownF fot">
 							<li class="Overview">
 								<a href="#">Overview</a>
 							</li>
@@ -202,18 +233,18 @@
 							</li>
 						</ul>
 					</li>
-					<li class="companyF mob">
-						<a href="#">Company</a>
-						<ul class="secondrop">
+					<li class="companyF">
+						<a href="#" class="comp">Company</a>
+						<ul class="secondrop fot">
 							<li><a href="#">About</a></li>
 							<li><a href="#">Team</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">Careers</a></li>
 						</ul>
 					</li>
-					<li class="connect">
-						<a href="#">Connect</a>
-						<ul class="thirddrop">
+					<li class="connectF">
+						<a href="#" class="conn">Connect</a>
+						<ul class="thirddrop fot">
 							<li><a href="#">Contact</a></li>
 							<li><a href="#">Newsletter</a></li>
 							<li><a href="#">LinkedIn</a></li>
@@ -221,15 +252,16 @@
 					</li>
 				</ul>
 			</div>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Jakub B</a>.
+			</div>
 		</footer>
-		<div class="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
+
 		<script src="script.js"></script>
 	</body>
 </html>
