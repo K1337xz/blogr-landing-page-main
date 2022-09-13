@@ -367,25 +367,34 @@ footer li {
 		display: flex;
 		align-items: center;
 		width: 100%;
-		margin-left: 10rem;
+		margin-left: 0;
 		margin-top: 0;
+		justify-content: space-around;
 	}
-	.ham {
-		background-image: url(images/icon-hamburger.svg);
-		background-size: cover;
-		width: 20px;
-		height: 20px;
+	.closeHam {
+		display: block;
+	}
+	.mobUl {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		width: 100%;
 	}
 	.menuMob {
+		position: absolute;
 		display: flex;
 		width: 90%;
-		position: absolute;
+		height: 80%;
 		top: 15%;
-		background-color: hsl(0, 0%, 100%);
 		left: 5%;
-		align-items: center;
-		justify-content: center;
+		gap: 20px;
+		background-color: hsl(0, 0%, 100%);
 		flex-direction: column;
+		border-radius: 10px;
+		border: 1px solid black;
+		align-items: center;
+		justify-content: space-around;
 	}
 	.mobUl ul,
 	.mobUl li,
@@ -395,5 +404,104 @@ footer li {
 	.formMobile a {
 		list-style: none;
 		text-decoration: none;
+		text-align: center;
+	}
+	.ham {
+		display: none;
+	}
+	.prodMob,
+	.compMob,
+	.combConn {
+		color: hsl(237, 17%, 21%);
+		font-weight: 700;
+	}
+	.product {
+		display: flex;
+		align-content: center;
+		flex-direction: column;
+	}
+	.productDropdownMobile {
+		display: none;
+		align-content: center;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		width: 30vh;
+		height: 20vh;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		background-color: hsl(240, 18%, 93%);
+		border-radius: 10px;
+	}
+	.productDropdownMobile li {
+		margin-bottom: 5px;
+	}
+	.productDropdownMobile a,
+	.companyDropdownMobile a,
+	.connectDropdownMobile a {
+		color: hsl(237, 17%, 21%);
+	}
+	.companyDropdownMobile {
+		display: none;
+		align-content: center;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		width: 30vh;
+		height: 15vh;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		background-color: hsl(240, 18%, 93%);
+		border-radius: 10px;
+	}
+	.connectDropdownMobile {
+		display: none;
+		align-content: center;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		width: 30vh;
+		height: 12vh;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		background-color: hsl(240, 18%, 93%);
+		border-radius: 10px;
+	}
+	.formMobile {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		width: 100%;
+	}
+	.formMobile a {
+		color: hsl(237, 17%, 21%);
+		text-align: center;
+	}
+	.registerMob {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		width: 20vh;
+		height: 7vh;
+		background-image: linear-gradient(
+			90deg,
+			hsl(13, 100%, 72%),
+			hsl(353, 100%, 62%)
+		);
+		border-radius: 50px;
+	}
+	.ulFormMobile {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid hsl(240, 18%, 93%);
+		width: 90%;
+		padding-top: 2rem;
+	}
+	.ulFormMobile li {
+		margin-bottom: 2rem;
 	}
 }
