@@ -75,6 +75,8 @@ header {
 	background-color: #ffff;
 	margin-left: 1rem;
 	border-radius: 10px;
+	transform: scaleY(0);
+	transition: 0.8s ease-in-out;
 }
 .productDropdown a {
 	margin-left: 2rem;
@@ -93,6 +95,8 @@ header {
 	background-color: #ffff;
 	margin-left: 1rem;
 	border-radius: 10px;
+	transform: scaleY(0);
+	transition: 0.8s ease-in-out;
 }
 .companyDropdown a {
 	margin-left: 2rem;
@@ -111,6 +115,8 @@ header {
 	background-color: #ffff;
 	margin-left: 1rem;
 	border-radius: 10px;
+	transform: scaleY(0);
+	transition: 0.8s ease-in-out;
 }
 .connectDropdown a {
 	margin-left: 2rem;
@@ -120,6 +126,13 @@ header {
 	margin-left: 3rem;
 	color: hsl(237, 17%, 21%);
 	font-weight: 700;
+}
+.trigger .connectDropdown,
+.trigger .companyDropdown,
+.trigger .productDropdown {
+	display: flex;
+	transform: scaleY(1);
+	transition: 0.8s ease-in-out;
 }
 .form ul,
 .form li,
