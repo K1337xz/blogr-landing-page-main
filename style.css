@@ -56,11 +56,13 @@ header {
 	background-image: url(images/icon-arrow-light.svg);
 	background-repeat: no-repeat;
 	background-position: 61px 8px;
+	width: 15%;
 }
 .company {
 	background-image: url(images/icon-arrow-light.svg);
 	background-repeat: no-repeat;
 	background-position: 71px 8px;
+	width: 20%;
 }
 .connect {
 	background-image: url(images/icon-arrow-light.svg);
@@ -71,12 +73,13 @@ header {
 	display: none;
 	flex-direction: column;
 	margin-bottom: -8rem;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	background-color: #ffff;
-	margin-left: 1rem;
+	margin-left: -3rem;
 	border-radius: 10px;
 	transform: scaleY(0);
-	transition: 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+	height: 10vh;
 }
 .productDropdown a {
 	margin-left: 2rem;
@@ -91,12 +94,13 @@ header {
 	display: none;
 	flex-direction: column;
 	margin-bottom: -7rem;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	background-color: #ffff;
 	margin-left: 1rem;
 	border-radius: 10px;
 	transform: scaleY(0);
 	transition: 0.8s ease-in-out;
+	height: 8.5vh;
 }
 .companyDropdown a {
 	margin-left: 2rem;
@@ -111,7 +115,7 @@ header {
 	display: none;
 	flex-direction: column;
 	margin-bottom: -6rem;
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 	background-color: #ffff;
 	margin-left: 1rem;
 	border-radius: 10px;
@@ -175,7 +179,11 @@ header {
 	width: 20px;
 	height: 20px;
 }
+.closeHam {
+	display: none;
+}
 .underNav {
+	width: 100%;
 	margin-top: 9rem;
 	color: hsl(0, 0%, 100%);
 	text-align: center;
@@ -276,7 +284,6 @@ header {
 }
 .leftunder {
 	margin-top: -4rem;
-
 	margin-left: 7rem;
 }
 .rightuner {
@@ -402,15 +409,18 @@ footer li {
 		display: none;
 		width: 90%;
 		height: 80%;
-		top: 15%;
+		top: 20%;
 		left: 5%;
 		gap: 20px;
 		background-color: hsl(0, 0%, 100%);
 		flex-direction: column;
 		border-radius: 10px;
-		border: 1px solid black;
 		align-items: center;
 		justify-content: space-around;
+		-webkit-box-shadow: 8px 8px 24px 9px rgba(0, 0, 0, 1);
+		-moz-box-shadow: 8px 8px 24px 9px rgba(0, 0, 0, 1);
+		box-shadow: 8px 8px 24px 9px rgba(0, 0, 0, 1);
+		z-index: 1;
 	}
 	.mobUl ul,
 	.mobUl li,
@@ -485,6 +495,11 @@ footer li {
 		margin-bottom: 1rem;
 		background-color: hsl(240, 18%, 93%);
 		border-radius: 10px;
+	}
+	.triggerMob .productDropdownMobile,
+	.triggerMob .companyDropdownMobile,
+	.triggerMob .connectDropdownMobile {
+		display: flex;
 	}
 	.formMobile {
 		display: flex;
