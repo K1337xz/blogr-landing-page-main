@@ -57,6 +57,7 @@ function closeMob() {
 	closeMobile.style.display = `none`;
 	openMobMenu.style.display = `block`;
 }
+
 header.addEventListener("click", close);
 closeMobile.addEventListener("click", closeMob);
 openMobMenu.addEventListener("click", openMobile);
